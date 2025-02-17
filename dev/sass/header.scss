@@ -1,8 +1,48 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
+header {
+	position: relative;
+	padding: 48px 0; 
+    
+    
+   
+
+	> .container {
+		display: flex;
+		text-align: center;
+		gap: 94px;
 	}
+
+   
+
+	.btn-burger {
+		margin-left: auto;
+       
+	}
+   
+
 }
+
+
+
+
+.menu {
+	&-list {
+		display: flex;
+		gap: 94px;
+	}
+
+	&__link {
+		font-size: 20px;
+		text-decoration: none;
+		color: $tekst;
+
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+   
+}
+
+ 
+
+
+   

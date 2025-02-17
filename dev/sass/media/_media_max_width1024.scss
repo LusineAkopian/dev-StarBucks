@@ -1,4 +1,90 @@
 @media screen and (max-width: 1024px) {
+	header {
+		padding: 34px 0;
+        position: relative;
+		> .container {
+			gap: 0;
+		}
+      
+	}
+	.header-logo {
+		max-width: 114px;
+		
+	}
+
+	.menu-list {
+		flex-direction: column;
+	}
+	.container {
+		padding: 0 25px;
+	}
+
+	.mobile-container {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: #0b0c0dd1;
+		width: 100%;
+		padding: 25px 25px 75px;
+		background-image: linear-gradient(
+			267.2deg,
+			rgba(35, 114, 73, 0.55) 3.05%,
+			rgba(53, 198, 107, 0.73) 40.73%);
+		backdrop-filter: blur(3px);
+		transition: 0.3s;
+		visibility: hidden;
+		transform: translate(0, -100%);
+		&.show {
+			top: 90px;
+			transform: translate(0, 0);
+			visibility: visible;
+		}
+	}
+
+	.btn-burger {
+		width: 42px;
+		height: 20px;
+		position: relative;
+        background-color: $bg-color;
+        border: none;
+        
+
+      	span {
+		position: absolute;
+		height: 2px;
+		width: 100%;
+        background-image: linear-gradient(267.2deg, #237249 3.05%, #35C66B 75.72%);
+        left: 0;
+		top: 0;
+
+		&:nth-child(2) {
+			top: 9px;
+			
+		}
+
+		&:last-child {
+			top: 18px;
+		}
+	}
+    &.active{
+        span{
+            transform: rotate(45deg);
+            top: 8px;
+            &:nth-child(2){
+                top: 8px;
+                transform: rotate(-45deg);
+            }
+            
+            &:last-child{
+                opacity: 0;
+            }
+        }
+
+    }
+    
+	}
+
+
+
+
 }
-
-
