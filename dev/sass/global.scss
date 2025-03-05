@@ -53,6 +53,13 @@ h1 {
     max-width: 100%;
     height: auto;
   }
+
+  a{
+    &:hover{
+      color: $secondary-color;
+    }
+    
+  }
   
 
 
@@ -61,6 +68,7 @@ h1 {
     padding: 0 12px;
     margin-left: auto;
     margin-right: auto;
+    
   }
   
 
