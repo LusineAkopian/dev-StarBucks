@@ -23,8 +23,8 @@ footer {
         position: relative;
 
         &::before{
-            @include footer-light;
-            background-image:url(../assets/img/decoracion_footer-light-sm.png) ;
+            @include template-light;
+            background-image:url(./assets/img/decoracion_footer-light-sm.png) ;
             width: 370px;
             height: 260px;
 
@@ -43,8 +43,8 @@ footer {
         position: relative;
 
         &::before{
-            @include footer-light;
-            background-image:url(../assets/img/decoracion_footer-light-lg.png)  ;
+            @include template-light;
+            background-image:url(./assets/img/decoracion_footer-light-lg.png ) ;
             width: 1250px;
             height: 906px;
             
@@ -82,8 +82,8 @@ footer {
             position: relative;
 
             &::before{
-                @include footer-light;
-                background-image: url(../assets/img/decoracion_footer-light-sm.png) ;
+                @include template-light;
+                background-image: url(./assets/img/decoracion_footer-light-sm.png) ;
                 width: 370px;
                 height: 260px;
     
@@ -120,7 +120,7 @@ footer {
             top: 50%;
             left: 50%;
             transform: translate(-50% , -50%);
-            background-image: url(../assets/img/decoracion_footer-light-sm.png);
+            background-image: url(./assets/img/decoracion_footer-light-sm.png);
             width: 168px;
             height: 153px;
             z-index: -1;
