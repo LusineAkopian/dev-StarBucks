@@ -1,6 +1,6 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024.99px) {
 	header {
-		padding: 34px 0;
+		padding: 32px 0;
         position: relative;
 		> .container {
 			gap: 0;
@@ -56,6 +56,7 @@
         background-image: linear-gradient(267.2deg, #237249 3.05%, #35C66B 75.72%);
         left: 0;
 		top: 0;
+		
 
 		&:nth-child(2) {
 			top: 9px;
@@ -67,9 +68,11 @@
 		}
 	}
     &.active{
+		
         span{
             transform: rotate(45deg);
             top: 8px;
+			
             &:nth-child(2){
                 top: 8px;
                 transform: rotate(-45deg);
@@ -86,19 +89,88 @@
 
 	.btn {
 		
+		font-size: 16px;
+		
 		&-outline{
 		width: 53px;
 		height: 53px;
 		border-radius: 18px;
+		
 		svg {
 			height: 22px;
-		}
-	}
+		}}
+
+		
 
 		
 
 
 	} 
+
+
+	.banner{
+		.container{
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+
+		h1{
+			font-size: min(12vw, 48px);
+			margin-bottom: 36px;
+			}
+
+			&-desctiption{
+				font-size: 12px;
+				margin-bottom: 36px;
+			}
+		
+
+		.banner-btn-group{
+			gap: 10px;
+			margin-bottom: 36px;
+			
+			
+		}	
+		&-img{
+			padding: 0 27px;
+			margin-right: initial;}
+
+			
+		.banner-discount{
+
+			right: 55px;
+		}
+		.banner-img::before{
+			display: none;
+		}
+
+		.banner-line{
+			right: -320px;
+			top: 157px;
+			
+		}
+
+
+		.btn-primary{
+			padding: 13px 4px;
+			}
+
+		.btn-secondary{
+			padding: 13px 32px;
+				
+			}
+
+		&-statistic-item{
+			width: auto;
+		}
+
+		&-statistic__title{
+			font-size: 42px;
+		}
+		&-statistic__subtitle{
+			font-size: 12px;
+		}
+    }
 
 	.footer{
 

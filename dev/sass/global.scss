@@ -3,6 +3,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html{
@@ -15,6 +16,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1,
@@ -29,22 +31,28 @@ h6{
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
+    line-height: 1.1;
   }
   h2 {
-    font-size: 2.375rem;
+    font-size: 3.875rem;
+    line-height:1.1 ;
   }
   h3 {
     font-size: 2rem;
+    line-height:1.32 ;
   }
   h4 {
-    font-size: 1.75rem;
+    font-size: 1.625rem;
+    line-height:1.23 ;
   }
   h5 {
     font-size: 1.5rem;
+    line-height:1.46 ;
   }
   h6 {
     font-size: 1.25rem;
+    line-height:1.63 ;
   }
   p {
     font-size: 1rem;
@@ -61,6 +69,79 @@ h1 {
     
   }
   
+  .btn{
+    color: $title-color;
+    font-size: 24px;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    
+
+   
+
+     
+  
+      &::after{
+        position: absolute;
+        @include template-light;
+        background-image: url(./assets/img/btn-primary-hover.svg);
+        width: 0;
+        height: 0;
+        transition: .3s;
+        
+      
+       
+      }
+          
+      &:hover{
+        color: #fff;
+        &:after{
+          width: 350px;
+        height: 350px;
+
+        }
+       
+      }}
+
+    
+    .btn-primary{
+      position: relative;
+      padding: 20px 80px;
+      font-weight: 600;
+      background-image: linear-gradient(263.46deg, #237249 3.14%, #35C66B 87.2%);
+
+
+      
+       
+      }
+    
+
+    .btn-secondary{
+      padding: 20px 54px;
+      background: #121517;
+      position: relative;
+
+      &::before{
+        content: "";
+        position: absolute;
+        inset: -2px;
+        background-image: linear-gradient(140deg, #717070 3.14%, #000000 87.2%);
+        z-index: -1;
+        border-radius: 40px;
+      }
+      &:hover{
+        &::after{
+          background-image: url(./assets/img/btn-secondary-hover.svg);
+          
+          
+         
+        }}
+      
+      
+  }
 
 
 .container{
@@ -71,7 +152,12 @@ h1 {
     
   }
   
-
+.gradoient{
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(263.46deg, #237249 3.14%, #35C66B 87.2%);
+  ;
+}
   
   ::selection{
     color: $bg-color;

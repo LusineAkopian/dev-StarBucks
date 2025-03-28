@@ -1,3 +1,9 @@
-@media screen and (max-width: 575px) {
-    
+@media screen and (max-width: 575.99px) {
+    .banner{
+        .banner-line{
+            right: -100px;
+            top: 180px;
+            width: auto;
+        }
+    }
 }
