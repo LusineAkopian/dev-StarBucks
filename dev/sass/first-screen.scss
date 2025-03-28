@@ -16,6 +16,7 @@
     }
 
     h1{
+        font-size: min(6vw, 80px);
         font-weight: 800;
         margin-bottom: 54px;
         position: relative;
@@ -42,6 +43,7 @@
     &-btn-group{
         gap: 16px;
         display: flex;
+        flex-wrap: wrap;
         margin-bottom: 54px;
         position: relative;
         &::before{
@@ -85,7 +87,7 @@
             height: 479px;
             left: -160px;
             top: 160px;
-            background: url(../assets/img/banner-decoration-img-small.png);
+            background: url(./assets/img/banner-decoration-img-small.png);
 
         }
 
@@ -97,40 +99,36 @@
             width: 676px;
             height:676px;
             left: -50px;
+            z-index: -1;
             top: calc(100% - 115px);
             background: url(./assets/img/banner-decoration-img-medim.png);
 
         }
 
-        // &::before{
-        //     content: "";
-        //     position: absolute;
-        //     right: -300px;
-        //     bottom: -240px;
-        //     width:910px  ;
-        //     height: 676px;
-        //     z-index: -1;
-        //     transform: translate(0, -50%);
-        //     background: url(./assets/img/banner-line.svg) center no-repeat;
-        // }
-
+       
        
     }
     &-discount{
-        width: 184px;
-        height: 184px;
+        
+        --max-size:184px;
+        --size: 14.154vw;
+        width: var(--size);
+        height: var(--size);
+        max-width: var(--max-size);
+        max-height: var(--max-size);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        background: url(./assets/img/bg-discount.svg) center no-repeat;
+        background: url(./assets/img/bg-discount.svg) center / 100% no-repeat;
         position: absolute;
         color: #fff;
         font-size: 55px;
+        font-size: min(4.231vw, 55px);
         top: 0;
         right: 38px;
-        z-index: 1;
+        
 
         &::before{
             content: "";
@@ -148,6 +146,14 @@
 
 
 
+    }
+    &-line{
+        width: 1102px;
+        height: 672;
+        position: absolute;
+        top: 200px;
+        right: -350px;
+        z-index: -1;
     }
 
 }
