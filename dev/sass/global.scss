@@ -145,7 +145,7 @@ h1 {
 
   .accent-label{
         
-    --max-size:184px;
+    --max-size:167px;
     --size: 14.154vw;
     width: var(--size);
     height: var(--size);
@@ -156,7 +156,7 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url(./assets/img/bg-discount.svg) center / 100% no-repeat;
+    
     position: absolute;
     color: #fff;
     font-size: 55px;
@@ -164,26 +164,31 @@ h1 {
     top: 0;
     right: 38px;
     text-transform: uppercase;
+    box-shadow: -4.56px 15.52px 26.48px 0px #143E2875;
+    z-index: 1;
+    
+   
     
 
     &::before{
         content: "";
         position: absolute;
-        width: calc(100% - 42px);
-        height: calc(100% - 42px);
-        box-shadow: -4.56px 15.52px 26.48px 0px #143E2875;
+        width: calc(100% + 24px);
+        height: calc(100% + 24px);
+       
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
         z-index: -1;
+        background: url(./assets/img/bg-discount.svg) center / 100% no-repeat;
 
     }}
 
     .accent-label__sm{
       @extend .accent-label;
       font-size: 32px;
-      --max-size:133px;
+      --max-size:113px;
 
     }
 
