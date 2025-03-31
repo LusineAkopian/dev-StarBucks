@@ -143,6 +143,55 @@ h1 {
       
   }
 
+  .accent-label{
+        
+    --max-size:167px;
+    --size: 14.154vw;
+    width: var(--size);
+    height: var(--size);
+    max-width: var(--max-size);
+    max-height: var(--max-size);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    position: absolute;
+    color: #fff;
+    font-size: 55px;
+    font-size: min(4.231vw, 55px);
+    top: 0;
+    right: 38px;
+    text-transform: uppercase;
+    box-shadow: -4.56px 15.52px 26.48px 0px #143E2875;
+    z-index: 1;
+    
+   
+    
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: calc(100% + 24px);
+        height: calc(100% + 24px);
+       
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: -1;
+        background: url(./assets/img/bg-discount.svg) center / 100% no-repeat;
+
+    }}
+
+    .accent-label__sm{
+      @extend .accent-label;
+      font-size: 32px;
+      --max-size:113px;
+
+    }
+
 
 .container{
     max-width: 1274px;
@@ -152,11 +201,15 @@ h1 {
     
   }
   
-.gradoient{
+.gradient-text{
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(263.46deg, #237249 3.14%, #35C66B 87.2%);
   ;
+}
+
+.gradient-background{
+  background-image:linear-gradient(267.2deg, #237249 3.05%, #35C66B 75.72%);
 }
   
   ::selection{
