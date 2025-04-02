@@ -1,0 +1,39 @@
+.we-make{
+    .container{
+        display: flex;
+        position: relative;
+        gap: 24px;
+        justify-content: space-between;}
+
+     &__img-box{
+        max-width: 465px;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: calc(100% - 3px);
+            height: calc(100% - 3px);
+            top: 36px;
+            right: 49px;
+            z-index: -1;
+            background-color: $primary-color;
+            -webkit-mask: url(./assets/img/we-make___bg.svg);
+            mask: url(./assets/img/we-make___bg.svg);
+            
+        }
+
+    &__content-box {
+        max-width: 470px;
+        }
+}
+    
+
+.we-make-line{
+    position: absolute;
+    right: 0;
+    bottom: 0;    
+    width: 993px ;
+    height: 999px;
+    z-index: -1;
+} }

@@ -1,4 +1,6 @@
 @media screen and (max-width: 1024.99px) {
+
+	
 	header {
 		padding: 32px 0;
         position: relative;
@@ -18,6 +20,17 @@
 	.container {
 		padding: 0 25px;
 	}
+	section{
+		margin-bottom: $section-mobile-margin;
+	}
+
+	.template-title{
+		font-size: min(12vw, 48px);
+		}
+
+	.template-description{
+		font-size: 12px;
+		}
 
 	.mobile-container {
 		position: absolute;
@@ -114,13 +127,11 @@
 			align-items: center;
 		}
 
-		h1{
-			font-size: min(12vw, 48px);
+		.template-title{
 			margin-bottom: 36px;
 			}
 
-			&-desctiption{
-				font-size: 12px;
+		.template-description{
 				margin-bottom: 36px;
 			}
 		
@@ -184,7 +195,13 @@
 
 
 	  .advantages{
-		margin-bottom: 68px;
+		
+
+
+		.template-description{
+			margin-bottom: 0;
+		 
+		 }
 	}
 
 
@@ -213,26 +230,21 @@
 		
 	  }
 
-	  .advantage__img-box{
+	.advantage__img-box{
 		--size: 86px;
 		margin-bottom: 8px;
 	  }
 
-	  .advantage img {
+	.advantage img {
 		max-width: 124px;
 		max-height: 124px;}
 
-		.advantage__title{
+	.advantage__title{
 			font-size: 1.2rem;
 			margin-bottom: 0;
 		}
 
-		.advantage__description{
-			
-		   font-size: 0.7rem;
-		   margin-bottom: 0;
 		
-		}
 
 	.footer{
 

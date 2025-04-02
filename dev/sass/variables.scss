@@ -13,6 +13,9 @@ $bg-accent-color: #0b0c0d;
 $tekst: #d9d9d9;
 $title-color: #fff;
 
+$section-margin: 100px;
+$section-mobile-margin: 64px;
+
 
 @mixin template-light{
     content: "";
@@ -23,6 +26,12 @@ $title-color: #fff;
     z-index: -1;
     background: center/contain , no-repeat;
 }
+
+// @mixin clip-1 {
+//     -webkit-mask: url(../assets/img/we-make___bg.svg);
+//     mask: url(../assets/img/we-make___bg.svg);
+            
+// }
 
 .white-wrapper{
     background: linear-gradient(264.52deg, #FFFFFF 4.95%, #E5E5E5 64.19%, #FBFBFB 88.37%);
