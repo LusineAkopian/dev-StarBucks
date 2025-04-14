@@ -2,14 +2,20 @@ header {
 	position: relative;
 	padding: 48px 0; 
 	z-index: 2;
+
+
+	>.container{
+		--gap:72;
+	}
     
     
    
 
 	> .container {
+		--gap: 94px;
 		display: flex;
 		text-align: center;
-		gap: 94px;
+		gap: var(--gap);
 		position: relative;
 
 		
@@ -26,12 +32,22 @@ header {
 }
 
 
+.mobile-container {
+	width: 100%;
+	display: flex;
+	gap: var(--gap);
+	align-items: center;
+	z-index: 2;
 
+	.btn{
+		margin-left: auto;
+	}
+}
 
 .menu {
 	&-list {
 		display: flex;
-		gap: 94px;
+		gap: var(--gap);
 	}
 
 	&__link {

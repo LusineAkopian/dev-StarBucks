@@ -1,0 +1,45 @@
+.overlay{
+    background: #00000085;
+    backdrop-filter:blur(2px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    height: 0;
+    width: 0;
+    transition: .3;
+
+    
+    &.show{
+        height: 100vh;
+        width: 100vh;
+        
+    }
+
+
+}
+
+.modal{
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    z-index: 11;
+    transform: translateX(-50%);
+    border: 1px solid;
+    padding: 24px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+
+    &.show{
+        visibility: visible;
+        opacity: 1;
+        
+    }
+}
+
+.modal-content{
+    
+    margin-bottom: 24px;
+}

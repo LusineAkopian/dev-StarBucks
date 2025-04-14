@@ -47,10 +47,17 @@
 		transition: 0.3s;
 		visibility: hidden;
 		transform: translate(0, -100%);
+		flex-direction: column;
+		
+		
 		&.show {
-			top: 90px;
+			top: 48px;
 			transform: translate(0, 0);
 			visibility: visible;
+
+		}
+		.btn{
+			margin-left: initial;
 		}
 	}
 

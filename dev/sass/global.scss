@@ -63,6 +63,8 @@ h1 {
     font-size: min(6vw, 80px);
     font-weight: 800;
      position: relative;
+     letter-spacing: -0,03em;
+     
 }
 
   .template-description{
@@ -71,6 +73,7 @@ h1 {
     font-weight: 400;
     margin-bottom: 56px;
     max-width: 480px;
+    letter-spacing: -0,02em;
 }
   p {
     font-size: 1rem;
@@ -86,6 +89,10 @@ h1 {
     }
     
   }
+
+  button{
+    cursor: pointer;
+  }
   
   .btn{
     color: $title-color;
@@ -94,8 +101,9 @@ h1 {
     border: none;
     text-decoration: none;
     background: transparent;
-    display: inline-block;
+    display: inline-flex;
     position: relative;
+    align-items: center;
     
 
    
@@ -121,8 +129,16 @@ h1 {
         height: 350px;
 
         }
+
+      
        
-      }}
+      }
+    svg{
+      --size: 28px;
+        width: var(--size);
+        height: var(--size);
+      }
+    }
 
     
     .btn-primary{
@@ -233,4 +249,7 @@ h1 {
   ::selection{
     color: $bg-color;
     background-color: $primary-color;
+  }
+  .overflow-hidden{
+    overflow: hidden;
   }
