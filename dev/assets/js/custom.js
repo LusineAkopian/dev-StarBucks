@@ -2,6 +2,44 @@ const burger = document.querySelector('#btn-burger')
 
 const mobileContainer = document.querySelector('#mobile-container')
 
+const video = document.querySelector('#video')
+const play = document.querySelector('#play')
+const stop = document.querySelector('#stop')
+const pause = document.querySelector('#pause')
+
+
+
+
+
+function playVideo(){
+    video.play()
+}
+
+function stopVideo(){
+    video.pause();
+    video.currentTime = 0;
+}
+
+function pauseVideo(){
+    video.pause()
+}
+
+play.addEventListener('click', ()=> {
+    playVideo();
+});
+
+pause.addEventListener('click', ()=>{
+    pauseVideo();
+});
+
+stop.addEventListener('click', ()=>{
+    stopVideo();
+})
+
+
+
+
+
 
 
 burger.addEventListener('click', ()=> {
@@ -25,8 +63,10 @@ const body = document.querySelector('body')
 
 function showModal() {
     
+    
     body.classList.add('overflow-hidden')
     overlay.classList.add('show')
+    
     
 }
 
@@ -36,6 +76,7 @@ function closeModal(){
     overlay.classList.remove('show')
 
     openModal.classList.remove('show')
+    stopVideo()
     
 
 }
@@ -50,6 +91,15 @@ modalTrigers.forEach(item => {
         
         showModal()
         modal.classList.add('show')
+
+        if(modal.classList.contains('video')){
+            modal.classList.add('show')
+            playVideo()
+        }
+        else{
+            modal.classList.add('show')
+        }
+
     })
     
 })

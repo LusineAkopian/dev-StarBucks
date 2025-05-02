@@ -31,15 +31,31 @@
     opacity: 0;
     visibility: hidden;
     transition: .5s;
+    max-width: 991px;
+    
 
     &.show{
         visibility: visible;
         opacity: 1;
         
     }
+    .btn-close{
+        position: absolute;
+        left: 550px;
+        right: 0;
+    }
 }
 
 .modal-content{
     
     margin-bottom: 24px;
+
+    video{
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .d-flex{
+        display: flex;
+    }
 }
